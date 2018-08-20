@@ -8,6 +8,10 @@ def turn_count(board)
   counter
 end
 
-def current_player
-  
+def current_player(board)
+  if turn_count(board) % 2 == 0 || turn_count(board) == 0
+  puts "X"
+  else
+  puts "0"
+  end
 end
